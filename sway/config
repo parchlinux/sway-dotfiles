@@ -1,9 +1,10 @@
-set $bg "/home/javid/Pictures/pexels-pixabay-33545.jpg"
+set $bg "/usr/share/wallpapers/parch-wallpapers/W4.png"
 set $scrshot bash ~/.config/sway/screenshot.bash
 
 default_border none
 gaps inner 3
 
+exec parch-welcome
 exec lxqt-policykit-agent
 exec bash ~/.config/sway/sound.bash
 exec mako
@@ -40,10 +41,7 @@ set $mute_mic wpctl set-mute @DEFAULT_AUDIO_SOURCE@ toggle
 #   output HDMI-A-1 resolution 1920x1080 position 1920,0
 #
 # You can get the names of your outputs by running: swaymsg -t get_outputs
-output HDMI-A-1 {
- mode 1920x1080@74.973HZ
-}
-output LVDS-1 disable
+
 ### Idle configuration
 #
 # Example configuration:
